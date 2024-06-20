@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>react bedoone node js</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@17.0.0/umd/react.development.js"></script> 
+    <script src="https://unpkg.com/react-dom@17.0.0/umd/react-dom.development.js">//joft react version 17 darand va rabete mostaghim darand</script>
+    <script>
+        const rootElement = document.getElementById("root");
+       // nemikhaim ke taghir bedim pas const
+       // ye element ba react mikhaim besazim
+        //==>kalame class ye kalame reserv shode hast pas dakhel react baraye claass dadn bayad benevisim className
+       //==> class name mitune khali bashe mitune nabashe
+       //==> children type array hast
+       //==> React ==>develpment ReactDOM===>react dom load mishe
+       //==>React ye object global va method be name createElement dare
+       //-->React.createElement('name tag',{key class:value , key child:[ tag migire] ya content}
+
+        const element = React.createElement('div',{
+        className:'javad',
+        children:[
+            React.createElement('span',{
+                className:'S1',
+                children:[
+                    React.createElement('span',{
+                    className:'S2',
+                    children:'span1'
+                }),
+                React.createElement('i',{
+                    className:'italic',
+                    children:'salam'
+                })
+                ],
+            }),
+        ], 
+    });
+    ReactDOM.render(element, rootElement);
+    // yekhoede rahat tar hast chon mitunam tu dar tu benevisam vali dar java khat be khat mineveshtam
+    console.log(React)
+    console.log(ReactDOM)
+    // java script mige element begir beriz dakhel variable va agar behesh classlist bedi
+    //man mostaghim miam mostaghim ruye derakht khode browser ke ma behesh migim dom taghir midam
+    //DOM=hamoon derakhty ke khode browser misaze
+    // dar halat js mostaghim khode derakht taghir mikone  
+    //js = js pure == js vanila script
+    // algoritm react miad az DOM browser ye copy migire negah midare aval in copy taghir midam
+    // bad moghayese mikonam ba dom browser bad har khaty taghir karde uno faghat taghir midam
+    //man 110 div daram faghat div 80 va 50 mikham taghir bedam 
+    // js miad DOM az aval misaze vali React faghat un khaty ke taghir karde taghir mide
+    // update faghat hamoon khate pas sor@ bishtare
+    // pas vaghty minevisim React.createElement dare element be DOM majazi ezafe mikone
+    //     ReactDOM.render(element, rootElement); dare amaliat moghayese anjam mide vaghty ke dare ezafe mishe
+    //pas agar 50 bar update she faghat hamoon khat taghir mikone pas sor@ bishtar
+    //pas hame chiz ye dafe taghir nemikone faghat jahaye taghir karde miand taghir peida mikonand
+    </script>
+</body>
+</html>

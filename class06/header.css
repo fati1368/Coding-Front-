@@ -1,0 +1,39 @@
+.header{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1;
+    width: 100%;
+    padding:10px;
+    background: #fff;
+}
+.header .logo{
+    float:left;
+}
+.header .logo a{
+    color: #093a58;
+    display: block;
+    padding: 1em;
+    font-size: 1.3rem;
+    margin:5px;
+}
+.header .main-menu{
+    float: right;
+    padding:1.8em;
+    margin-right:3%;
+}
+.header .main-menu ul li{
+    float:right; 
+    padding-left:1em; 
+}
+.header .main-menu ul li a{
+    text-transform: uppercase;
+    padding-left: 3em;
+    color: #3acec2;
+    font-size:1rem;
+    padding:4rm;
+    display:block;
+}
+.header .main-menu ul li a:hover{
+    color: #093a58;
+}

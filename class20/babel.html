@@ -1,0 +1,78 @@
+<html>
+    <head></head>
+    <body>
+        <p> ye proje moratab besurat folder misazim da akhar bayad build production azash begirim 
+            yani tamam filha be surat moratab va ba tavajoh be jai ke neveshte mishe merge mishand
+            pas ye  file js be ma tahvil dade mishe
+            dar estelah code
+            // uglify  /// comperes mishe
+            va khanay code pain miad vaghty comperes mishe ta jaye momken kutah mishe 
+            yani esm var ha kutah beshe space hazf beshe ta code biad kutah beshe 
+            compress kardan code beram search konam
+        </p>
+        <div></div>
+        <script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script>
+        <!-- babel mige agar mikhay man kar konam bayad hoze mano moshakhas koni -->
+        <!-- hala hr chi cod bezanim tabdil mikone be version ghadimi -->
+        <script type="text/babel">
+            const mehrdad="string"
+// hala dakhel head man ye script misaze ke dakhelesh const tabdil be var shode
+// babel 2 noskhe dare ==> 1. ya dar samte browser tarjome mikone //// 2. dar samte server tarjome mikone
+// tarjome samte server sorat bishtar ast chon ye file khoroji be browser mide va khode browser dargir tarjome nemishe
+// be karbar rabti nadare ma js 6 neveshtim ya 4 pas dar samte server in tarjome anjam mishe
+            const math=(a,b)=>{
+                return a*b
+            }
+            math(2,4)
+            // pasr dakhel script header tarjome mishe be var va regular function
+            let string="123456"
+            // let tabdil be var mishe
+
+
+
+            const zodyak={
+          title: "شوی شب های مافیا: زودیاک",
+          season: 2,
+          episode:9,
+          poster:"https://static.cdn.asset.filimo.com/flmt/mov_cvr_137093_1712.jpg?width=1920&quality=90&secret=tWXiBBrMGECdcnJdT7TAPw",
+          actor:[
+              {name:"keyvan",
+              avator:"https://static.cdn.asset.filimo.com/flmt/mov_140115_66610.jpg?width=400&quality=85&secret=LtUGnFrY7hRgoaiafEJpWg",
+              link:"#",},
+              {name:"keyvan",
+              avator:"https://static.cdn.asset.filimo.com/flmt/mov_140115_66610.jpg?width=400&quality=85&secret=LtUGnFrY7hRgoaiafEJpWg",
+              link:"#",},
+              {name:"keyvan",
+              avator:"https://static.cdn.asset.filimo.com/flmt/mov_140115_66610.jpg?width=400&quality=85&secret=LtUGnFrY7hRgoaiafEJpWg",
+              link:"#",},
+              {name:"keyvan",
+              avator:"https://static.cdn.asset.filimo.com/flmt/mov_140115_66610.jpg?width=400&quality=85&secret=LtUGnFrY7hRgoaiafEJpWg",
+              link:"#",},
+          ]
+      }
+      function printactors(){
+        var string="";
+        for (var i=0 ; i<zodyak.actor.length;i++){
+            string=
+            string+"<li><img src="+zodyak.actor[i].avator+" /> </li>";
+           // kutahtar shode
+           // string+="<li><img src="+zodyak.actor[i].avator+" /> </li>";
+
+        }
+        return string;
+        //innerHTML tavagho dare string az tag bedim
+      }
+      let content=document.querySelector("div");
+      content.innerHTML=
+      `<h1>${zodyak.title} - فصل ${zodyak.season} قسمت  ${zodyak.episode} </h1>
+      <img src = ${zodyak.poster} / >
+      <h2> بازیگران </h2>
+      <ul class="actors-list" > ${printactors()} </ul>`
+
+       // be in raftar migan interpoleitor ===> dar asl string tempelate hast === dar asl ravesh concat kardan hast
+       //`` be in migan backtick
+       // babel ino tabdil mikone be concat khodesh
+       // space ghabool mikone va agar khastim java benevisim ${} bashe
+       </script>
+    </body>
+</html>

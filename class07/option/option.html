@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>option</title>
+        <style>
+            *{
+                padding: 0;
+                margin:0;
+                box-sizing:border-box;
+            }
+            .child{
+                width: 200px;
+                height: 200px;
+                background: violet;
+            }
+            .child:hover{
+                background: green;
+                width: 300px;
+                height: 300px;
+            }
+            .t1{
+                transition: all 3s 2s ;
+            }
+            .t2{
+                transition: all 3s ease-in-out ;
+            }
+            .t3{
+                transition: all 3s  ;
+            }
+            .t4{
+                transition: all 0.5s ease-out allow-discrete;
+            }
+            .t5{
+                transition: 200ms linear 50ms;
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition">https://developer.mozilla.org/en-US/docs/Web/CSS/transition</a>
+        <div class="child t1"></div>
+        <p>delay:2s</p>
+        <div class="child t2"></div>
+        <p> easing function:ease-in-out</p>
+        <div class="child t3"></div>
+        <p>allow-discrete</p>
+        <div class="child t4"></div>
+        <p>transition: all 0.5s ease-out allow-discrete;</p>
+        <div class="child t5"></div>
+        <p>transition: 200ms linear 50ms;</p>
+
+    </body>
+</html>

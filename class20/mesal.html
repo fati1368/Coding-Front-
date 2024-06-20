@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>react bedoone node js</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@17.0.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script>
+    <script type="text/babel">
+      const ItemList = [
+    {
+      Name: " زرشک پلو با مرغ",
+      Type: "MainMenu",
+      pic: "assets/pic/morgh.jpg",
+      description:
+        "ران مرغ ۴۰۰ گرمی، برنج ایرانی ۳۵۰ گرمی، نثار زرشک زعفرانی، گوجه کبابی، لیمو، پیاز سماقی، ریحان، زیتون",
+      price: 2500000,
+      isNew:false,
+    },
+    {
+      Name: "چلو ماهیچه گوسفندی",
+      Type: "MainMenu",
+      pic: "assets/pic/mahiche.jpeg",
+      description:
+        "ماهیچه گوسفندی ۵۰۰ گرمی، ۳۵۰ گرم برنج ایرانی، نثار زعفرانی، گوجه کبابی، لیمو، پیاز سماقی، ریحان، زیتون",
+      price: 7500000,
+      isNew:true,
+    },
+    {
+      Name: "چلو ماهی قزل آلای سرخ شده",
+      Type: "MainMenu",
+      pic: "assets/pic/ghezelala.jpg",
+      description:
+        "یک عدد ماهی قزل آلای سرخ شده ۴۵۰ گرمی، برنج ایرانی ۳۵۰ تا ۴۰۰ گرم، دورچین: سبزی، لیمو ترش، سبزی",
+      price: 3700000,
+      isNew:true,
+    },
+    {
+      Name: "خوراک کباب وزیری",
+      Type: "MainMenu",
+      pic: "assets/pic/vaziri.webp",
+      description:
+        "یک سیخ کباب لقمه گوشت مخلوط راسته گوساله و فیله گوسفندی ۲۵۰ گرمی، یک سیخ جوجه کباب سینه مرغ ۲۵۰ گرمی، گوجه کبابی، لیمو، پیاز سماقی، ریحان، زیتون",
+      price: 4700000,
+      isNew:true,
+    },
+    {
+      Name: "خوراک کاسه کباب",
+      Type: "MainMenu",
+      pic: "assets/pic/kase.jpg",
+      description:
+        "یک سیخ ۲۱۰ گرمی شامل (کباب لقمه و جوجه کباب و کباب چنجه گوساله)، دورچین: گوجه کبابی، فلفل کبابی، پیاز جعفری، نارنج",
+      price: 3500000,
+      isNew:true,
+    }];
+    /// vorody function argoman hast va component ham props hast
+    const rootElement = document.getElementById("root");
+    function FoodList(props){
+        function renderFarm(){
+            return props.data.map(function(item,i){
+                return(
+                <li>
+                    <p>{item.Name}</p>
+                    <img src= {item.pic} />
+                    <p>{item.description}</p>
+                    <p>{item.price}</p>
+                    {item.isNew === true ? <p> جدید</p> : ""}
+                </li>
+                )
+            })};
+        return(
+            <div>
+                <h1>{props.title} </h1>
+                <ul> {renderFarm()}</ul>
+            </div>
+        )
+    }
+    const element = (
+        <div className="mason">
+            <FoodList  data={ItemList}  title='لیست غذا '></FoodList>
+          <span className="s1">
+            <i>salam</i>
+          </span>
+        </div>
+      );
+      ReactDOM.render(element, rootElement);
+
+    </script>
+  </body>
+</html>

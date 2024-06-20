@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Animation</title>
+        <style>
+            *{
+                padding:0;
+                margin:0;
+                box-sizing:border-box;
+            }
+            body{
+                direction:ltr;
+            }
+            .parent{
+                width:600px;
+                height:600px;
+                background: pink;
+                position: relative;
+            }
+            .parent .child{
+                position: absolute;
+                top:0;
+                left:0;
+                width: 100px;
+                height: 100px;
+                background: green;
+                animation-name:fati;
+                animation-duration:5s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes fati{
+                0%{
+                    top:0;
+                    left:0;
+                }
+                50%{
+                    left:500px;
+                    top:0;
+                }
+                75%{
+                    left:0;
+                    top:500px;
+                }
+                100%{
+                   top:0;
+                   left:0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <div class="child"></div>
+        </div>
+    </body>
+</html>

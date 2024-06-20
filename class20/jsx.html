@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>react bedoone node js</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@17.0.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script>
+    <script type="text/babel">
+      const rootElement = document.getElementById("root");
+      // jsx tools ==>babel be react ezafe beshe va dakhel js biaim Html benevisim
+      // babel 2 kar mikone ham es 6 , 7 ,8  tabidil be es4 mikone // ham mitune jsx6 benevisim tabdil be react kone
+
+      const element = (
+        <div class="mason">
+          <span className="s1">
+            <i>salam</i>
+          </span>
+        </div>
+      );
+
+      ReactDOM.render(element, rootElement);
+      // ham az interpoleitor rahat tar shod ham az js pure
+      //html dakhel java neveshtim
+      // jsx ye abzar jodagoone hast ke react azash poshtibani mikone
+      // shart haye jsx:
+      // 1 ->  agar mikhay chand khat benevisi hatman dakhel () bashe
+      // agar yek khate ehtiaj be neveshta () nisht
+      // 2=> har parantez faghat yek doone pedar dare ke in shart dakhel react ham bood
+      // agar mikhaim 2 ta ya chnd ta sibiling dashte bashim bayad hame be yek div pedar ezafe konim
+      //har ebarat jsx nemitune bishtar az 1 pedar dashte bashe
+      //3=> baraye neveshtan esme class bayad benevisim className
+
+      // react avali mafhoom moghayese DOM ovord
+      // dovomin mafhoom react component hast
+      // component hamoon function java script hast ba ye fargh koochak ke khorooji hamoon HTML hast
+    </script>
+  </body>
+</html>

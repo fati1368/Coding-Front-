@@ -1,0 +1,100 @@
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 1;
+    background:#fff;
+    width: 100%;
+}
+.header .header-wrapper{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:30px 0;
+}
+.header .logo h1 a{
+    color:#093a58;
+    font-size:1.4rem;
+    display: block;
+}
+.header .main-menu ul{
+    display:flex;
+    gap:30px;
+}
+.header .main-menu ul li a{
+    color: #3acec2;
+    text-transform:uppercase;
+    font-size:1.02rem;
+    padding:0.5em;
+    display:block;
+    font-weight:400;
+}
+.header .main-menu ul li a:hover{
+    color: #093a58;
+}
+.hero-section{
+    background:#3acec2;
+    color:#fff;
+    padding:150px 0 50px 0;
+}
+.hero-section .hero-wrapper{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: center;
+}
+.hero-section img{
+    width: 190px;
+    height:auto;
+}
+.hero-section .hero-wrapper p{
+    font-size:1.5rem;
+}
+.content-wrapper{
+    display:flex;
+    gap:4%;
+    padding:7% 0;
+}
+.content .content-wrapper .first, .content .content-wrapper .third{
+    width:30%;
+}
+.content .content-wrapper .second{
+    width:40%;
+}
+.content .content-wrapper .column h2{
+    color:#093a58;
+    margin-bottom:5%;
+    font-size:1.5rem;
+}
+.content .content-wrapper .column p{
+    padding: 3% 0;
+    line-height:150%;
+    font-size:1rem;
+    color: #3a3a3a;
+}
+.content .content-wrapper .second .extra-content{
+    position:relative;
+}
+.content .content-wrapper .second .extra-content .extra{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    background:rgba(9, 58, 88, 0.8) ;
+    padding:3%;
+    color:#fff;
+    text-align: center;
+}
+.content .content-wrapper .second .extra-content .extra p{
+    color:#fff;
+    line-height:100%;
+    text-align: left;
+}
+.footer{
+    text-align: center;
+    width:100%;
+    background:rgb(217, 228, 234);
+    font-size: 1.1rem;
+    padding:50px;
+    color:black;
+}

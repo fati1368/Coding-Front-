@@ -1,0 +1,97 @@
+html{
+    font-size:15px
+}
+body{
+    direction: ltr;
+    font-family: 'Varela Round', sans-serif;
+}
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+.ov{
+    overflow: hidden;
+}
+.wrapper{
+    max-width: 1300px;
+    width:90%;
+    margin:0 auto;
+    }
+@media (max-width:900px){
+      .ov{
+        overflow: none;
+    } 
+    .header {
+        text-align: center;
+    }
+    .header .logo{
+        float:none;
+        width: 100%;
+    }
+    .header .wrapper .main-menu ul li{ 
+        display:inline-block;
+        float: none;
+    }
+    .header .wrapper .main-menu{
+        text-align: center;
+        float: none;
+        width: 100%;
+        }  
+     .header .wrapper .main-menu ul { 
+        text-align: center;
+        width: 100%;  
+      }
+   
+        .deatail .content .column.first,.deatail .content .column.second{
+            width: 50%;
+        }
+        .deatail .content .column.third{
+            width: 100%;
+        }
+} 
+@media (max-width:700px){
+    .deatail .content .column.first,.deatail .content .column.second{
+        width: 100%;
+    }
+    .header .main-menu ul li{
+        padding-left:0;
+
+    }
+    .header .main-menu .menu li a{
+        padding-left:0;
+    }
+    .deatail .hero .wrapper .img{
+        width:140px;
+    
+    }
+    .deatail .hero .wrapper h1{
+        padding-top:1em ;
+    }
+    .deatail .hero .wrapper p{
+        padding-top: 0.5em;
+        font-size: 1.3rem;
+    }
+    .deatail .hero .wrapper{
+        padding-top:1em;
+}
+}
+@media (max-width:450px){
+    .deatail .hero .wrapper .img{
+        width:120px;
+
+    }
+   
+    .deatail .hero .wrapper p{
+        font-size: 1rem;
+    }
+    .wrapper{
+        width:100%;
+    }
+
+
+}

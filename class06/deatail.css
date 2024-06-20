@@ -1,0 +1,78 @@
+.deatail{
+    padding:20px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.deatail .hero{
+    text-align: center;
+    background:  #3acec2 ;
+    color:#fff;
+    padding-top:8em;
+    padding-bottom: 3em;
+}
+.deatail .hero img{
+    width:190px;
+    height:auto;
+
+}
+.deatail .hero h1{
+    padding-top:1.2em ;
+}
+.deatail .hero p{
+    padding-top: 0.5em;
+    font-size: 1.5rem;
+}
+.deatail .content{
+   padding:5em 3em;
+   padding-bottom: 2em;
+}
+.deatail .content .column{
+    float:left;
+    padding: 1.5%;
+}
+.deatail .content .first,.third{
+    width: 30%;
+}
+.deatail .content .second{
+    width: 40%;
+}
+.deatail .content .second .extra-content{
+    position: relative;
+    margin-bottom: 3%;
+}
+
+.deatail .content .second .extra{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background:rgba(9, 58, 88, 0.8) ;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+.deatail .content .second .extra p{
+    line-height: 120%;
+    text-align: left;
+    font-size: 0.8rem;
+    margin-bottom: 3%;
+    margin-top: 3%;
+
+}
+
+.deatail .content .column h2{
+    color: #093a58;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+
+}
+.deatail .content .column P{
+    margin-bottom: 25px;
+    line-height: 200%;
+}
+.footer{
+    text-align: center;
+    width:100%;
+    background:rgb(217, 228, 234);
+    padding:3em 0;
+    font-size: 1.1rem;
+}

@@ -1,0 +1,30 @@
+*{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: #fff;
+}
+ul,ol{
+    list-style: none;
+}
+body{
+  direction: rtl; 
+  font-family:vazir ; 
+  background-color:#151515 ;
+}
+.wrapper{
+    width:1200px;
+    margin:0 auto;
+}
+.wrapper-full{
+    width:100%;
+    padding:0 20px;
+}
+@font-face {
+    font-family: vazir;
+    src: url('webfonts/Vazirmatn-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }

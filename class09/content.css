@@ -1,0 +1,398 @@
+.header{
+    position:fixed;
+    top:0;
+    right:0;
+    z-index:4;
+    width:100%;
+    background-color:black;
+}
+.header .header-wrapper{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.header .header-wrapper .icon-menu{
+    width: 15px;
+    height:auto;
+}
+.header .header-wrapper .icon-menu-big{
+    width: 20px;
+    height:auto;
+}
+.header .header-wrapper .right-header{
+    display:flex;
+    gap:74px;
+    align-items: center;
+}
+.header .header-wrapper .right-header .logo img{
+    width:80px;
+    height:auto;
+}
+.header .header-wrapper .right-header .main-menu ul{
+    display:flex;
+    gap:2.3em;
+}
+.header .header-wrapper .right-header .main-menu ul li a{
+    display:flex;
+    gap:0.5em;
+    font-size:0.73rem;
+    font-weight: 400;
+    align-items: center;
+}
+.header .header-wrapper .right-header .main-menu ul li a p:hover{
+    color: #fdc13c;
+}
+.header .header-wrapper .left-header{
+    display:flex;
+    gap:1.4em;
+    font-size:0.7rem;
+    align-items: center;
+    padding:0.8em 1.3em;
+}
+.header .header-wrapper .left-header .list-header a{
+    display:flex;
+    gap:0.5em;
+    color:#cccccc;
+    margin:0 1.2em;
+}
+.header .header-wrapper .left-header .list-header a p:hover{
+    color: #fdc13c;
+}
+.header .header-wrapper .left-header .payment a{
+    display:flex;
+    background-color: #1cb561;
+    border-radius: 4px;
+    padding:0.75em 1.5em;
+    gap:0.5em;
+    font-size:0.75rem;
+    color:#fff;
+}
+.header .header-wrapper .left-header .account a{
+    display:flex;
+}
+.header .header-wrapper .left-header .account .account-img{
+    border-radius: 20px;
+    background-color: #5b0808;
+    padding:6px;
+    border-color: #f13030;
+    border-style:solid;
+    border-width: 2px;
+}
+.hero-section .hero-image{
+    background:#151515 url(assets/pic/poster.jpg) no-repeat left top;
+    height: 520px;
+    background-size: cover;
+    position: relative;
+}
+.hero-section .hero-image .transparent{
+    background-color:rgba(0,0,0,0.6);
+    height:520px;
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.hero-section .hero-image .hero-wrapper{
+    position: relative;
+    z-index:1;
+}
+.hero-section .hero-image .hero-wrapper img.icon-info{
+    width: 20px;
+    height:auto;
+}
+.hero-section .hero-image .hero-wrapper .top-hero{
+    display:flex;
+    justify-content: space-between;
+    padding-top:90px;
+}
+.hero-section .hero-image .hero-wrapper .top-hero .poster-information{
+    display:flex;
+    gap:2.1em;
+}
+.hero-section .hero-image .hero-wrapper .top-hero .poster-information .poster{
+    width:240px;
+    height:320px;
+    position:relative;
+}
+.hero-section .hero-image .hero-wrapper .top-hero .poster-information .poster:hover .overly,
+.hero-section .hero-image .hero-wrapper .top-hero .poster-information .poster:hover .icon-overly{
+    opacity:1;
+    visibility:visible;
+}
+.hero-section .hero-image .hero-wrapper .top-hero .poster-information .poster img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    border-radius:3px;
+}
+.hero-section .hero-image .hero-wrapper .top-hero .poster-information .poster .overly{
+    position:absolute;
+    top:0;
+    left:0;
+    background-color:rgba(0,0,0,0.6);
+    width: 100%;
+    height:100%;
+    border-radius:3px;
+    opacity:0;
+    visibility:hidden;
+    transition:all 2s;
+}
+.hero-section .hero-image .hero-wrapper .top-hero .poster-information .poster .icon-overly{
+    position:absolute;
+    top:50%;
+    left:50%;
+    background-color: #1cb561;
+    border-radius: 20px;
+    padding: 10px;
+    transform: translate(-50%,-50%);
+    opacity:0;
+    visibility:hidden;
+    transition:all 2s;
+}
+.hero-section .hero-image .hero-wrapper .top-hero .poster-information .poster .icon-overly img{
+    width:15px;
+    height:auto;
+}
+.hero-section .hero-image .hero-wrapper .top-hero .poster-information .information{
+    display:flex;
+    flex-direction: column;
+    gap:1.2em;
+    font-size:0.8rem;
+}
+.hero-section .hero-image .hero-wrapper .top-hero .poster-information .information .icon-info{
+    width: 18px;
+    height:auto;
+}
+.hero-section .hero-image .hero-wrapper .top-hero .poster-information .information .icon-info-big{
+    width: 27px;
+    height:auto;
+}
+.hero-section .hero-image .hero-wrapper .top-hero .poster-information .information .name-vote .name-fa{
+    padding-bottom:1.9em;
+    font-size:1.08rem;
+}
+.hero-section .hero-image .hero-wrapper .top-hero .poster-information .information .name-vote .name-en{
+    font-size:1.1rem;
+}
+.hero-section .hero-image .hero-wrapper .top-hero .poster-information .information .name-vote .vote{
+    display:flex;
+    gap:1.1em;
+    align-items: center;
+    background-color: #fdc13c;
+    padding:0.3em 0.4em;
+    border-radius: 13px;
+    width: fit-content;
+    /* display:inline-block; */
+    margin-top: 1.4em;
+    /* اینجا مشکل دارم width بزارم کار نمیکنه */
+}
+.hero-section .hero-image .hero-wrapper .top-hero .poster-information .information .name-vote .vote p{
+    color:#151515;
+    font-weight: bold;
+    font-size:0.65rem;
+}
+.hero-section .hero-image .hero-wrapper .top-hero .poster-information .information .age{
+    display:flex;
+    gap:0.4em;
+    align-items: center;
+    padding:1.4em 0;
+}
+.hero-section .hero-image .hero-wrapper .top-hero .poster-information .information .age p{
+    color: #fdc13c;
+    font-size:0.85rem;
+}
+.hero-section .hero-image .hero-wrapper .top-hero .poster-information .information .actor-time{
+    font-size: 0.66rem;
+    padding-top: 1.8em ;
+    line-height: 3.6em;
+}
+.hero-section .hero-image .hero-wrapper .top-hero .poster-information .information .genre{
+    display:flex;
+    gap:0.6em;
+}
+.hero-section .hero-image .hero-wrapper .top-hero .poster-information .information .genre a p{
+    background-color: #4d4d4d;
+    padding:0.6em 0.9em;
+    border-radius:12px;
+    font-size: 0.64rem;
+    color: #fff;
+}
+.hero-section .hero-image .hero-wrapper .top-hero .online{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1.35em;
+    background-color: rgba(77,77,77,0.5);
+    padding:1.3em 1em 1.5em 1em;
+    font-size:0.84rem;
+    color: #f9f9f9;
+}
+.hero-section .hero-image .hero-wrapper .top-hero .online .pic-online img{
+    width: 150px;
+    height:auto;
+    margin-bottom: 0.8em;
+}
+.hero-section .hero-image .hero-wrapper .top-hero .online .icon-online{
+    width: 15px;
+    height:auto;
+}
+.hero-section .hero-image .hero-wrapper .top-hero .online .info-online .film,
+.hero-section .hero-image .hero-wrapper .top-hero .online .info-online .time,
+.hero-section .hero-image .hero-wrapper .top-hero .online .info-online .ticket{
+    display:flex;
+    font-size:0.65rem;
+    gap:1em;
+    padding: 0.5em 0;
+    /* یعنی با فلکس بیس نمیشه تنظیم کرد؟ */
+}
+.hero-section .hero-image .hero-wrapper .bottom-hero{
+    display:flex;
+    justify-content:space-between;
+    font-size:0.73rem;
+    padding-top:3.2em;
+}
+.hero-section .hero-image .hero-wrapper .bottom-hero .save-right{
+    position: relative;
+    transition: all 2s;
+}
+.hero-section .hero-image .hero-wrapper .bottom-hero .save-right .save{
+    display:flex;
+    gap:0.4em;
+    background-color: rgb(51, 51, 51);
+    padding:0.85em 1.7em;
+    border-radius:15px;
+    color: #fff;
+}
+.hero-section .hero-image .hero-wrapper .bottom-hero .save-right:hover .overly-save{
+    opacity: 1;
+    visibility: visible;
+}
+.hero-section .hero-image .hero-wrapper .bottom-hero .save-right .overly-save{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color:rgba(255,255,255,0.1);
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    border-radius:15px;
+}
+.hero-section .hero-image .hero-wrapper .bottom-hero .save-right .save img{
+    width: 10px;
+    height:auto;
+}
+.hero-section .hero-image .hero-wrapper .bottom-hero .watch-left a p{
+    background-color:#de2f2f;
+    padding:0.85em 7em;
+    border-radius:15px;
+    color: #fff;
+}
+.special .header-special {
+    display:flex;
+    justify-content:space-between;
+    padding-top:2em;
+}
+.special .header-special .more a{
+    display:flex;
+    gap:0.4em;
+    flex-direction: row-reverse;
+    color: #fdc13c;
+    font-size: 0.8rem;
+}
+.special .header-special .more a .icon-special{
+    width:5px;
+    height:auto;
+}
+.special .items-list{
+    padding:1em 0 3em 0;
+}
+.special .items-list ul {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.special .items-list ul li{
+    width:223px;
+    height: 293px;
+    position:relative;
+    padding:0.3em;
+}
+.special .items-list ul li a{
+    display:block;
+    position:relative;
+}
+.special .items-list ul li a span{
+    position:absolute;
+    top:10px;
+    left:10px;
+    z-index: 1;
+    background-color:#1cb561;
+    border-radius:10px;
+    font-size:0.7rem;
+    padding:0.4em;
+    display:inline-block;
+    color: #fff;
+}
+.special .items-list ul li a img.poster-special{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius: 5px;
+}
+.special .items-list ul li a img.copy-right{
+    position:absolute;
+    bottom:10px;
+    left:50%;
+    z-index: 1;
+    transform:translateX(-50%);
+}
+.special .items-list ul li a .overlay{
+    position:absolute;
+    width: 100%;
+    height:100%;
+    background-color:rgba(41,41,41,0.7);
+    left:0;
+    top:0;
+    z-index:2;
+    transition: all 1s;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 5px;
+}
+.special .items-list ul li a .hover-box{
+    display:flex;
+    flex-direction: column;
+    gap: 0.3em;
+    position: absolute;
+    bottom:20px;
+    right:20px;
+    opacity:0;
+    visibility: hidden;
+    transition: all 1s;
+    font-size: 0.65rem;
+    z-index:3;
+}
+.special .items-list ul li a .hover-box p{
+    color: #fff;
+    padding:0.6em;
+}
+.special .items-list ul li a .hover-box .imbd{
+    display:flex;
+    gap:1em;
+    background-color:rgba(77,77,77,0.8);
+    border-radius: 10px;
+    width: fit-content;
+    padding:0.1em 0.2em;
+}
+.special .items-list ul li a .hover-box .imbd p{
+    padding:0.1em 0;
+}
+.special .items-list ul li:hover .hover-box,
+.special .items-list ul li:hover .overlay{
+    opacity: 1;
+    visibility:visible;
+}
+.special .items-list ul li a .hover-box .imbd .icon-special{
+    width: 18px;
+    height:auto;
+}

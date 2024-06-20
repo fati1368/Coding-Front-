@@ -1,0 +1,217 @@
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:2 ;
+    width:100%;
+    background-color:black;
+}
+.header .header-wrapper{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:7px 0;
+}
+.header .header-wrapper .right-header{
+    display:flex;
+    gap:85px;
+}
+.header .header-wrapper .right-header .logo img{
+    width:80px;
+    height:auto;
+}
+.header .header-wrapper .right-header .maine-menu ul{
+    display:flex;
+    gap:1.6em;
+}
+.header .header-wrapper .right-header .maine-menu ul li a{
+    display:flex;
+    gap:0.4em;
+    font-size:0.65rem;
+    align-items: center;
+}
+.header .header-wrapper .right-header .maine-menu ul li a p:hover{
+    color: #fdc13c;
+}
+.header .header-wrapper .right-header .maine-menu ul li .icon-menu{
+    width:15px;
+    height:auto;
+}
+.header .header-wrapper .left-header{
+    display:flex;
+    gap:15px;
+    font-size:0.68rem;
+}
+.header .header-wrapper .left-header .payment{
+    background-color: #33bd71;
+    border-radius: 4px;
+    padding:0.6em 1em;
+}
+.header .header-wrapper .left-header .payment a{
+    display: flex;
+    gap:0.5em;
+    align-items: center;
+}
+.header .header-wrapper .left-header .payment img{
+    width:auto;
+    height:10px;
+}
+.header .header-wrapper .left-header .login{
+    background-color: #4d4d4d;
+    border-radius: 4px;
+    padding:0.6em 1em;
+}
+.hero-section .hero-image{
+    background-image: url(assets/image/poster\ asli.webp);
+    height:515px;
+    background-size: cover;
+    position:relative;
+}
+.hero-section .hero-image .hero-transparent{
+    background-color:rgba(0,0,0,0.6);
+    height:515px;
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.hero-section .hero-image .hero{
+    position: relative;
+    z-index:1;
+}
+.hero-section .hero-image .hero .hero-up{
+    display:flex;
+    padding-top:90px;
+    gap:32px;
+}
+.hero-section .hero-image .hero .hero-up .poster{
+    position: relative;
+}
+.hero-section .hero-image .hero .hero-up .poster:hover .poster-hover{
+    opacity: 1;
+    visibility: visible;
+}
+.hero-section .hero-image .hero .hero-up .poster img{
+    width:240px;
+    height:320px;
+    border-radius:3px;
+}
+.hero-section .hero-image .hero .hero-up .poster .poster-hover{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    transition: all 2s;
+    opacity: 0;
+    visibility: hidden;
+}
+.hero-section .hero-image .hero .hero-up .poster .poster-hover .hover-box img{
+    position: absolute;
+    top:50%;
+    left:50%;
+}
+    .hero-section .hero-image .hero .hero-up .poster .poster-hover .hover-box img{
+    width:50px;
+    height:auto;
+}
+.hero-section .hero-image .hero .hero-up .info{
+    font-size:0.8rem;
+    display:flex;
+    flex-direction:column;
+    gap:1.3em;
+}
+.hero-section .hero-image .hero .hero-up .info .name-vote .name{
+    padding-bottom:1.7em;
+    font-size:0.9rem;
+}
+.hero-section .hero-image .hero .hero-up .info .name-vote .vote{
+    display:flex;
+    font-size:0.5rem;
+    padding-top: 10px;
+}
+.hero-section .hero-image .hero .hero-up .info .name-vote .vote .like{
+    display:flex;
+    gap:1em;
+    align-items: center;
+    background-color: #33bd71;
+    border-radius:10px;
+    padding:0 0.9em;
+}
+.hero-section .hero-image .hero .hero-up .info .name-vote .vote .imdb{
+    display:flex;
+    gap:1em;
+    align-items: center;
+    background-color: #fdc13c;
+    border-radius:10px;
+    padding:0 0.5em;
+}
+.hero-section .hero-image .hero .hero-up .info .name-vote .vote .imdb p b{
+    color:rgb(0,0,0);
+}
+.hero-section .hero-image .hero .hero-up .info .age{
+    display: flex;
+    gap:0.5em;
+    padding-top: 12px;
+}
+.hero-section .hero-image .hero .hero-up .info .age p{
+    color:#fdc13c;
+    font-size: 0.75rem;
+}
+.hero-section .hero-image .hero .hero-up .info .actor{
+    font-size: 0.55rem;
+    line-height: 35px;
+    padding-top: 16px;
+}
+.hero-section .hero-image .hero .hero-up .info .genr{
+    display:flex;
+    gap:0.5em;
+}
+.hero-section .hero-image .hero .hero-up .info .genr p{
+    background-color: #4d4d4d;
+    border-radius: 20px;
+    padding:3px 8px;
+    font-size: 0.6rem;
+}
+
+.hero-section .hero-image .hero .hero-up .info .icon-info{
+    width:20px;
+    height:auto;
+}
+.hero-section .hero-image .hero .hero-buttom .wrapper-buttom{
+    display:flex;
+    justify-content: space-between;
+    padding-top: 35px;
+}
+.hero-section .hero-image .hero .hero-buttom .wrapper-buttom .left-hero-buttom{
+    display:flex;
+    align-items: center;
+    gap:0.5em;
+}
+.hero-section .hero-image .hero .hero-buttom .wrapper-buttom .left-hero-buttom .save a,
+.hero-section .hero-image .hero .hero-buttom .wrapper-buttom .left-hero-buttom .download a,
+.hero-section .hero-image .hero .hero-buttom .wrapper-buttom .left-hero-buttom .like a,
+.hero-section .hero-image .hero .hero-buttom .wrapper-buttom .left-hero-buttom .dislike a{
+    background-color: #4d4d4d;
+    display: flex;
+    align-items: center;
+    gap:0.5em;
+    border-radius:20px;
+    font-size:0.6rem;
+    padding:8px;
+}
+.hero-section .hero-image .hero .hero-buttom .wrapper-buttom .right-hero-buttom .login-buttom{
+    display:flex;
+    gap:0.2em;
+    background-color: #33bd71;
+    border-radius: 20px;
+    font-size:0.6rem;
+    padding:8px 12px;
+    width: fit-content;
+}
+.hero-section .hero-image .hero .hero-buttom .wrapper-buttom .icon-buttom{
+    width:20px;
+    height:auto;
+}
+/* فونت سایز به کی بدیم بهتره؟ */
